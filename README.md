@@ -1,4 +1,4 @@
-# Using Spring Data with EclipseLink
-How to replace Hibernate with more robust EclipseLink in Spring Boot-based applications
+# Advantages of not using Spring Data and Hibernate with relational data
+Why Spring Data JPA is well suited for demo applications with empty databases
 
-Sample code for my post https://marian-caikovski.medium.com/using-spring-data-with-eclipselink-8aef650eb1d6 about replacing sometimes suboptimal JPA implementation Hibernate with a less aberrant EclipseLink
+Sample code for my post https://marian-caikovski.medium.com/advantages-of-not-using-spring-data-and-hibernate-with-relational-data-8a509faf0c48 about advantages of Spring Data JPA over Spring without it.
