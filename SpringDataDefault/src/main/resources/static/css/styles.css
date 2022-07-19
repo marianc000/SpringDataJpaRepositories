@@ -1,0 +1,94 @@
+* {
+    font-family: Arial;
+    color: darkslategrey;
+}
+
+.row>div {
+    display: inline-block;
+}
+
+
+.row>div:nth-child(1) {
+    width: 13em;
+}
+
+.row>div:nth-child(2) {
+    width: 27em;
+}
+
+
+.row>div:nth-child(3) {
+    width: 15em;
+}
+
+.hiddentrue {
+    visibility: hidden;
+}
+
+.c0 {
+    border-top: 1px solid grey;
+}
+
+.actor {
+    visibility: hidden;
+}
+
+.actor.f0.c0 {
+    visibility: visible;
+}
+
+.film {
+    visibility: hidden;
+}
+
+.film.c0 {
+    visibility: visible;
+}
+
+.row.header {
+    font-weight: bold;
+}
+
+div#rootDiv {
+    margin: 1em;
+    position: relative;
+}
+
+.table {
+
+    display: inline-block;
+
+    padding: 1em;
+
+
+
+    vertical-align: top;
+
+
+    background-color: ivory;
+
+    margin: 1em;
+
+}
+
+
+.caption {
+    font-size: 1.2em;
+    color: brown;
+}
+
+.links a {
+    margin-left: 3em;
+}
+
+.links {
+    position: fixed;
+    background-color: violet;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+div[id] {
+    padding-top: 2em;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+ 
+    <parent>
+        <groupId>sample.queries</groupId>
+        <artifactId>SpringDataRepositories</artifactId>
+        <version>1.0</version>
+    </parent>
+  
+    <artifactId>SpringDataEclipseLink</artifactId>
+ 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.hibernate</groupId>
+                    <artifactId>hibernate-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>org.eclipse.persistence.jpa</artifactId>
+            <version>2.7.10</version>
+        </dependency>
+ 
+      
+        <!--        just comment it, it is a listener described in printing test method names
+        it is described in https://marian-caikovski.medium.com/print-names-of-test-methods-executed-by-junit-5-f337b4ba1264-->
+        <dependency>
+            <groupId>custom.junit5</groupId>
+            <artifactId>TestMethodNames</artifactId>
+            <version>1.0</version>
+            <scope>test</scope>
+        </dependency>
+ 
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+ 
+        </plugins>
+    </build>
+ 
+</project>
